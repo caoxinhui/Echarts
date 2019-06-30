@@ -7,3 +7,4 @@ HTML Canvas 核心技术 图形、动画与游戏开发
   - chapter 2
       - 图片repeat模式
       - 点击清除效果
+      - todo 仪表盘绘制(89)
