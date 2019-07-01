@@ -22,12 +22,26 @@
     canvas not supported
   </canvas>
   <script>
-    var canvas = document.getElementById('canvas')
-    context = canvas.getContext('2d')
-    context.font = '38pt Arial'
+    var canvas = document.getElementById('canvas'),
+    context = canvas.getContext('2d');
     context.fillStyle = 'cornflowerblue'
-    context.fillText('hello canvas', canvas.width / 2 - 150, canvas.height / 2 + 15) //填充
-    context.strokeText('hello canvas', canvas.width / 2 - 150, canvas.height / 2 + 15) //描边
+    context.strokeStyle = 'yellow'
+
+    context.shadowColor = 'rgba(50,50,50,1)'
+    context.shadowOffsetX = 2
+    context.shadowOffsetY =2
+    context.shadowBlue = 4
+
+    context.lineWidth = 20
+    context.lineGap = 'round'
+
+    context.beginPath()
+    context.moveTo(120.5, 130)
+    context.quadraticCurveTo(150.8,130,160.6,150.5)
+    context.quadraticCurveTo(190,250,510.5,160.5)
+    context.quadraticCurveTo(240,100.5,290,70.5)
+
+    context.stroke()
   </script>
 </body>
 
