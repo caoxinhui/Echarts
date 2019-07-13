@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .g-container {
+      position: relative;
+      height: 100vh;
+      min-height: 400px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap
+    }
+    .g-middle {
+      order: 2;
+      flex: auto 1 0;
+      background: #cc6630;
+    }
+
+    .g-left {
+      order: 1;
+      flex: 200px 0 0;
+      background: #ffcc00;
+    }
+
+    .g-right {
+      order: 3;
+      flex: 200px 0 0;
+      background: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="g-container">
+    <div class="g-middle"></div>
+    <div class="g-left"></div>
+    <div class="g-right"></div>
+  </div>
+</body>
+
+</html>

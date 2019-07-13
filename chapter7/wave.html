@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      display: flex
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      font-size: 50px;
+      margin: auto;
+      text-align: center;
+      overflow: hidden;
+      color: transparent;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: deeppink
+    }
+
+    .wave {
+      border: 5px solid deeppink;
+      border-radius: 50%;
+      animation: indent 5s infinite linear;
+    }
+
+    @keyframes indent {
+      100% {
+        text-indent: -100px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>ABCDEFGHIJKLMNOPQ</div>
+  <div class="wave">ABCDEFGHIJKLMNOPQ</div>
+</body>
+
+</html>
